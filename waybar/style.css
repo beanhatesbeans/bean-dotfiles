@@ -1,0 +1,160 @@
+/* this is fucking awful, i'll redo it at some point */
+
+@import "mocha.css";
+* {
+    /* icon font: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/SourceCodePro.tar.xz */
+    font-family: FontAwesome, Source Code Pro;
+    font-size: 20px;
+}
+
+window#waybar {
+    background-color: rgba(14, 14, 22, 0.85);
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    border: none;
+    border-radius: 10;
+	padding: 4px;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+	padding: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+    background-color: @base;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: @text;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+	border: none;
+	padding-left: 4px;
+	padding-right: 4px;
+    background-color: @lavender;
+    color: @base;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#tray,
+#scratchpad,
+#window,
+#workspaces {
+    margin: 4px;
+    margin-left: 0px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: @base;
+    color: @text;
+    padding: 6px;
+    margin: 2px;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#cpu {
+    background-color: @base;
+    color: @text;
+	padding: 6px;
+    margin: 2px;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#memory {
+    background-color: @base;
+    color: @text;
+	padding: 6px;
+    margin: 2px;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#pulseaudio {
+    background-color: @base;
+    color: @text;
+    padding: 6px;
+    margin: 2px;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#tray {
+    background-color: @base;
+    color: @text;
+	padding: 6px;
+    margin: 2px;
+	border-style: solid;
+    border-color: @lavender;
+    border-radius: 20;
+    border-width: 2px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
+
+#custom-logo {
+	color: @lavender;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 37px;
+}
