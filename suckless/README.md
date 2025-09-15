@@ -8,4 +8,5 @@ sudo make clean install
 and to configure them you edit config.def.h since that's the one that patches apply to. edits to config.h aren't permanent
 
 for slstatus specifically you need to add the path to vol.sh where it says to in config.def.h
+
 with dwm you might wanna change my weird ass keybinds
