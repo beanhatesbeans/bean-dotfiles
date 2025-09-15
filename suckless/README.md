@@ -7,4 +7,4 @@ to compile them do:
 rm -f config.h
 sudo make clean install
 ```
-and to configure it you edit config.def.h since that's the one that patches apply to
+and to configure them you edit config.def.h since that's the one that patches apply to. edits to config.h aren't permanent
