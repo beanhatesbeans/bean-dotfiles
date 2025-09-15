@@ -1,5 +1,7 @@
 i don't have all of my configs in here yet, i'm cleaning everything up so it isn't as embarassing to have public. everything in here probably fucking sucks so use at your own risk. these also won't ever have more features/stuff than i need, so if you're looking for like a full desktop environment then look for dotfile repos that are actually meant to be used by lots of different people.
 
+a lot of these aren't organized how they should be on an actual system so you can't just clone this repo and have it "just work"
+
 subdirectories have their own readme files with build instructions (only suckless for now)
 
 swayfx/foot/waybar:
